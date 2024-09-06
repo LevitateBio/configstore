@@ -1,0 +1,19 @@
+---
+# This is a signed yaml file, run "drone sign levitatebio/configstore --save" after any changes
+name: default
+kind: pipeline
+type: kubernetes
+node_selector:
+  CPUs: 8
+
+steps:
+  - name: Run tests
+    image: golang
+    commands:
+      - go test
+
+---
+kind: signature
+hmac: 9049f4046d6e60897d812301004bb5f6a3bf6df7834946f8fbaa59293ffbf31d
+
+...
