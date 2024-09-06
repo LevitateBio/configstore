@@ -42,7 +42,7 @@ var (
 )
 
 func GetConfig() *MyConfig{
-	configstore.LoadOnce(config, TestMode, &once)
+	configstore.LoadOnce(&config, TestMode, &once)
 	return &config
 }
 ```
@@ -54,7 +54,7 @@ config := GetConfig()
 myInt := config.IntValue
 ```
 
-You should ideally load the config and print it out as early as possible in the execution of your application like this:
+You should ideally load the config and print it out as early as possible in the execution of your application:
 
 ```go
 config := GetConfig()
