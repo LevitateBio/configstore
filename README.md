@@ -1,6 +1,6 @@
 # configstore
 
-
+[![Build Status](https://drone.levitate.bio/api/badges/LevitateBio/configstore/status.svg)](https://drone.levitate.bio/LevitateBio/configstore)
 
 This is an opinionated library for handling the management of internal configuration in web applications. 
 This library was designed around the following observations.

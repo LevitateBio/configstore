@@ -1,5 +1,5 @@
 ---
-# This is a signed yaml file, run drone sign levitatebio/configstore after any changes
+# This is a signed yaml file, run "drone sign levitatebio/configstore --save" after any changes
 name: default
 kind: pipeline
 type: kubernetes
@@ -14,4 +14,6 @@ steps:
 
 ---
 kind: signature
-hmac: 54d9f48eb902b694c2fd87669f037c6b2ffd18cef65dd174a57159ed0dbdc562
+hmac: b74fdd36f8d75e8c473e9f4f0711c1483fa3f8e0cfd1fff83884e78eb67a3216
+
+...
